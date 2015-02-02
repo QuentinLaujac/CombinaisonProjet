@@ -1,3 +1,4 @@
+package metier;
 enum EnumIntensite{
   RIEN (0),
   FAIBLE (1),

@@ -1,3 +1,4 @@
+package metier;
 enum EnumCombinaison{
   RIEN (-1),
   TETE_AVANT (1),
