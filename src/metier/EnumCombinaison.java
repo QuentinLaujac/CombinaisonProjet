@@ -1,5 +1,5 @@
 package metier;
-enum EnumCombinaison{
+public enum EnumCombinaison{
   RIEN (-1),
   TETE_AVANT (1),
   CORPS (2);

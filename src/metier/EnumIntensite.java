@@ -1,5 +1,5 @@
 package metier;
-enum EnumIntensite{
+public enum EnumIntensite{
   RIEN (0),
   FAIBLE (1),
   MOYEN (2),
