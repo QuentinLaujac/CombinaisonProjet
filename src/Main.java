@@ -13,7 +13,7 @@ public class Main {
 		JFrame f = new FenetrePrincipale();
 		f.setVisible(true);
 		f.pack();
-		
+		 
 	}
 
 }
