@@ -22,7 +22,7 @@ public class FenetrePrincipale extends JFrame implements MouseListener {
 		super();
 
 		setLayout(new BorderLayout());
-
+		setResizable(false);
 		JPanel panelCenter = new JPanel();
 		panelCenter.setLayout(new GridLayout(1, 2));
 
@@ -56,9 +56,18 @@ public class FenetrePrincipale extends JFrame implements MouseListener {
 
 	@Override
 	public void mouseClicked(MouseEvent e) {
-		System.out.println(e.getLocationOnScreen());
+		System.out.println("X: "+e.getX()+" Y: "+e.getY());
 		DrawVibro drawVibro = new DrawVibro();
-		drawVibro.drawCircle(getGraphics(), e.getX(), e.getY()+35, 10);
+		if(e.getX() <=100 && e.getX()>=94 && e.getY()>=152 && e.getY() <=251 ){
+			remove(drawVibro);
+			validate();
+			drawVibro.drawCircle(getGraphics(), 75, 220+35, 5);
+		}
+		if(e.getX() <=119 && e.getX()>=78 && e.getY()>=185 && e.getY() <=261 ){
+			remove(drawVibro);
+			validate();
+			drawVibro.drawCircle(getGraphics(), 75, 295+35, 5);
+		}
 		this.add(new DrawVibro());
 	}
 

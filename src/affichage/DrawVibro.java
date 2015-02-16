@@ -9,7 +9,8 @@ import javax.swing.JPanel;
 public class DrawVibro extends JPanel{
 
 	public DrawVibro() {
-		setPreferredSize(new Dimension(100, 100));
+		repaint();
+		setPreferredSize(new Dimension(50, 50));
 	}
 
 	public void drawCircle(Graphics cg, int xCenter, int yCenter, int r) {
