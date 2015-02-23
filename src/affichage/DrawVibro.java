@@ -17,5 +17,6 @@ public class DrawVibro extends JPanel{
 		cg.setPaintMode();
 		cg.setColor(new Color(0,255,255,127));
 		cg.fillOval(xCenter-r, yCenter-r, 3*r, 3*r);
+		//repaint();
 	}
 }

@@ -1,6 +1,7 @@
 package affichage;
 
 import java.awt.BorderLayout;
+import java.awt.Graphics;
 import java.awt.GridLayout;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
@@ -17,13 +18,15 @@ public class FenetrePrincipale extends JFrame implements MouseListener {
 	 */
 	private static final long serialVersionUID = 1L;
 	private DrawVibro vibro = new DrawVibro();
+	JPanel panelCenter;
+
 
 	public FenetrePrincipale() {
 		super();
 
 		setLayout(new BorderLayout());
 		setResizable(false);
-		JPanel panelCenter = new JPanel();
+		panelCenter = new JPanel();
 		panelCenter.setLayout(new GridLayout(1, 2));
 
 		JPanel panelFace = new JPanel();
@@ -57,18 +60,21 @@ public class FenetrePrincipale extends JFrame implements MouseListener {
 	@Override
 	public void mouseClicked(MouseEvent e) {
 		System.out.println("X: "+e.getX()+" Y: "+e.getY());
-		DrawVibro drawVibro = new DrawVibro();
+		
+		Graphics graph = getGraphics();
+
 		if(e.getX() <=100 && e.getX()>=94 && e.getY()>=152 && e.getY() <=251 ){
-			remove(drawVibro);
-			validate();
-			drawVibro.drawCircle(getGraphics(), 75, 220+35, 5);
+			update(graph);
+			vibro.drawCircle(graph, 75, 220+35, 5);
+			
 		}
 		if(e.getX() <=119 && e.getX()>=78 && e.getY()>=185 && e.getY() <=261 ){
-			remove(drawVibro);
-			validate();
-			drawVibro.drawCircle(getGraphics(), 75, 295+35, 5);
+			update(graph);
+			vibro.drawCircle(graph, 75, 295+35, 5);
 		}
-		this.add(new DrawVibro());
+		
+		this.add(vibro);
+
 	}
 
 	@Override
