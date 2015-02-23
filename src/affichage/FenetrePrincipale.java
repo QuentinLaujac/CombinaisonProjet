@@ -35,11 +35,6 @@ public class FenetrePrincipale extends JFrame implements MouseListener {
 		JPanel panelDos = new JPanel();
 		panelDos.setLayout(new GridLayout(20, 20));
 
-		/*for (int i = 0; i != 20; i++) {
-			for (int j = 0; j != 20; j++) {
-				panelFace.add(new BoutonMot(EnumCombinaison.RIEN));
-			}
-		}*/
 
 		JLabel labFace = new JLabel(new ImageIcon("face.jpg"));
 		labFace.setBounds(0, 0, 270, 230);
@@ -60,19 +55,53 @@ public class FenetrePrincipale extends JFrame implements MouseListener {
 	@Override
 	public void mouseClicked(MouseEvent e) {
 		System.out.println("X: "+e.getX()+" Y: "+e.getY());
-		
-		Graphics graph = getGraphics();
 
-		if(e.getX() <=100 && e.getX()>=94 && e.getY()>=152 && e.getY() <=251 ){
-			update(graph);
-			vibro.drawCircle(graph, 75, 220+35, 5);
-			
-		}
-		if(e.getX() <=119 && e.getX()>=78 && e.getY()>=185 && e.getY() <=261 ){
-			update(graph);
+		Graphics graph = getGraphics();
+		update(graph);
+		//face
+		if(e.getX()>=65 && e.getX() <=95   && e.getY()>=272 && e.getY() <=355 ){
 			vibro.drawCircle(graph, 75, 295+35, 5);
 		}
-		
+		else if(e.getX()>=76 && e.getX() <=118   && e.getY()>=191 && e.getY() <=271 ){
+			vibro.drawCircle(graph, 85, 240+35, 5);
+		}
+		else if(e.getX()>=85 && e.getX() <=132   && e.getY()>=118 && e.getY() <=270 ){
+			vibro.drawCircle(graph, 110, 145+35, 5);
+		}
+		else if(e.getX()>=101 && e.getX() <=145   && e.getY()>=38 && e.getY() <=117 ){
+			vibro.drawCircle(graph, 120, 70+35, 5);
+		}
+		else if(e.getX()>=101 && e.getX() <=213  && e.getY()>=25 && e.getY() <=63 ){
+			vibro.drawCircle(graph, 160, 55+35, 5);
+		}
+		else if(e.getX()>=214 && e.getX() <=275  && e.getY()>=25 && e.getY() <=63 ){
+			vibro.drawCircle(graph, 250, 55+35, 5);
+		}
+		else if(e.getX()>=276 && e.getX() <=308  && e.getY()>=38 && e.getY() <=117 ){
+			vibro.drawCircle(graph, 290, 70+35, 5);
+		}
+		else if(e.getX()>=277 && e.getX() <=313  && e.getY()>=118 && e.getY() <=190){
+			vibro.drawCircle(graph, 295, 145+35, 5);
+		}
+		else if(e.getX()>=286 && e.getX() <=328  && e.getY()>=191 && e.getY() <=271){
+			vibro.drawCircle(graph, 315, 240+35, 5);
+		}
+		else if(e.getX()>=303 && e.getX() <=331  && e.getY()>=272 && e.getY() <=350){
+			vibro.drawCircle(graph, 319, 295+35, 5);
+		}
+		//dos
+		else if(e.getX()>=495 && e.getX() <=604  && e.getY()>=25 && e.getY() <=63 ){
+			vibro.drawCircle(graph, 545, 55+35, 5);
+		}
+		else if(e.getX()>=605 && e.getX() <=707  && e.getY()>=25 && e.getY() <=63 ){
+			vibro.drawCircle(graph, 660, 55+35, 5);
+		}
+		else if(e.getX()>=495 && e.getX() <=604  && e.getY()>=64 && e.getY() <=105 ){
+			vibro.drawCircle(graph, 570, 81+35, 5);
+		}
+
+
+
 		this.add(vibro);
 
 	}
