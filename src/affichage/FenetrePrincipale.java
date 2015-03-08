@@ -60,45 +60,100 @@ public class FenetrePrincipale extends JFrame implements MouseListener {
 		update(graph);
 		//face
 		if(e.getX()>=65 && e.getX() <=95   && e.getY()>=272 && e.getY() <=355 ){
+			//1
 			vibro.drawCircle(graph, 75, 295+35, 5);
 		}
 		else if(e.getX()>=76 && e.getX() <=118   && e.getY()>=191 && e.getY() <=271 ){
+			//2
 			vibro.drawCircle(graph, 85, 240+35, 5);
 		}
 		else if(e.getX()>=85 && e.getX() <=132   && e.getY()>=118 && e.getY() <=270 ){
+			//3
 			vibro.drawCircle(graph, 110, 145+35, 5);
 		}
 		else if(e.getX()>=101 && e.getX() <=145   && e.getY()>=38 && e.getY() <=117 ){
+			//4
 			vibro.drawCircle(graph, 120, 70+35, 5);
 		}
 		else if(e.getX()>=101 && e.getX() <=213  && e.getY()>=25 && e.getY() <=63 ){
-			vibro.drawCircle(graph, 160, 55+35, 5);
+			//5
+			vibro.drawCircle(graph, 160, 45+35, 5);
 		}
 		else if(e.getX()>=214 && e.getX() <=275  && e.getY()>=25 && e.getY() <=63 ){
-			vibro.drawCircle(graph, 250, 55+35, 5);
+			//6
+			vibro.drawCircle(graph, 255, 45+35, 5);
 		}
 		else if(e.getX()>=276 && e.getX() <=308  && e.getY()>=38 && e.getY() <=117 ){
+			//7
 			vibro.drawCircle(graph, 290, 70+35, 5);
 		}
 		else if(e.getX()>=277 && e.getX() <=313  && e.getY()>=118 && e.getY() <=190){
+			//8
 			vibro.drawCircle(graph, 295, 145+35, 5);
 		}
 		else if(e.getX()>=286 && e.getX() <=328  && e.getY()>=191 && e.getY() <=271){
+			//9
 			vibro.drawCircle(graph, 315, 240+35, 5);
 		}
 		else if(e.getX()>=303 && e.getX() <=331  && e.getY()>=272 && e.getY() <=350){
+			//10
 			vibro.drawCircle(graph, 319, 295+35, 5);
 		}
+		else if(e.getX()>=145 && e.getX() <=213  && e.getY()>=64 && e.getY() <=90 ){
+			//11
+			vibro.drawCircle(graph, 175, 70+35, 5);
+		}
+		else if(e.getX()>=145 && e.getX() <=213  && e.getY()>=90 && e.getY() <=115 ){
+			//12
+			vibro.drawCircle(graph, 190, 90+35, 5);
+		}
+		else if(e.getX()>=214 && e.getX() <=275  && e.getY()>=90 && e.getY() <=115 ){
+			//13
+			vibro.drawCircle(graph, 230, 90+35, 5);
+		}
+		else if(e.getX()>=214 && e.getX() <=275  && e.getY()>=64 && e.getY() <=90 ){
+			//14
+			vibro.drawCircle(graph, 245, 70+35, 5);
+		}
+		else if(e.getX()>=145 && e.getX() <=178  && e.getY()>=90 && e.getY() <=160 ){
+			//15
+			vibro.drawCircle(graph, 170, 115+35, 5);
+		}
+		else if(e.getX()>=179 && e.getX() <=213  && e.getY()>=90 && e.getY() <=160 ){
+			//16
+			vibro.drawCircle(graph, 185, 120+35, 5);
+		}
+		else if(e.getX()>=214 && e.getX() <=240  && e.getY()>=90 && e.getY() <=160 ){
+			//17
+			vibro.drawCircle(graph, 235, 120+35, 5);
+		}
+		else if(e.getX()>=241 && e.getX() <=275  && e.getY()>=90 && e.getY() <=160 ){
+			//18
+			vibro.drawCircle(graph, 250, 115+35, 5);
+		}
+		else if(e.getX()>=145 && e.getX() <=200  && e.getY()>=90 && e.getY() <=210 ){
+			//19
+			vibro.drawCircle(graph, 180, 180+35, 5);
+		}
+		else if(e.getX()>=201 && e.getX() <=265  && e.getY()>=90 && e.getY() <=210 ){
+			//20
+			vibro.drawCircle(graph, 220, 180+35, 5);
+		}
+		
 		//dos
 		else if(e.getX()>=495 && e.getX() <=604  && e.getY()>=25 && e.getY() <=63 ){
+			//26
 			vibro.drawCircle(graph, 545, 55+35, 5);
 		}
-		else if(e.getX()>=605 && e.getX() <=707  && e.getY()>=25 && e.getY() <=63 ){
-			vibro.drawCircle(graph, 660, 55+35, 5);
-		}
 		else if(e.getX()>=495 && e.getX() <=604  && e.getY()>=64 && e.getY() <=105 ){
+			//27
 			vibro.drawCircle(graph, 570, 81+35, 5);
 		}
+		else if(e.getX()>=605 && e.getX() <=707  && e.getY()>=25 && e.getY() <=63 ){
+			//29
+			vibro.drawCircle(graph, 660, 55+35, 5);
+		}
+
 
 
 
