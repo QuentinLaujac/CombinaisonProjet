@@ -155,8 +155,6 @@ public class FenetrePrincipale extends JFrame implements MouseListener {
 		}
 
 
-
-
 		this.add(vibro);
 
 	}
