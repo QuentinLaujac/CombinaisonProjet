@@ -67,7 +67,7 @@ public class FenetrePrincipale extends JFrame implements MouseListener {
 			//2
 			vibro.drawCircle(graph, 85, 240+35, 5);
 		}
-		else if(e.getX()>=85 && e.getX() <=132   && e.getY()>=118 && e.getY() <=270 ){
+		else if(e.getX()>=85 && e.getX() <=132   && e.getY()>=118 && e.getY() <=190 ){
 			//3
 			vibro.drawCircle(graph, 110, 145+35, 5);
 		}
@@ -139,7 +139,27 @@ public class FenetrePrincipale extends JFrame implements MouseListener {
 			//20
 			vibro.drawCircle(graph, 220, 180+35, 5);
 		}
-		
+		else if(e.getX()>=135 && e.getX() <=175  && e.getY()>=210 && e.getY() <=255 ){
+			//21
+			vibro.drawCircle(graph, 160, 230+35, 5);
+		}
+		else if(e.getX()>=176 && e.getX() <=230  && e.getY()>=210 && e.getY() <=255 ){
+			//22
+			vibro.drawCircle(graph, 200, 230+35, 5);
+		}
+		else if(e.getX()>=231 && e.getX() <=265  && e.getY()>=210 && e.getY() <=255 ){
+			//23
+			vibro.drawCircle(graph, 240, 230+35, 5);
+		}
+		else if(e.getX()>=125 && e.getX() <=200  && e.getY()>=255 && e.getY() <=315 ){
+			//24
+			vibro.drawCircle(graph, 170, 275+35, 5);
+		}
+		else if(e.getX()>=201 && e.getX() <=275  && e.getY()>=255 && e.getY() <=315 ){
+			//25
+			vibro.drawCircle(graph, 230, 275+35, 5);
+		}
+
 		//dos
 		else if(e.getX()>=495 && e.getX() <=604  && e.getY()>=25 && e.getY() <=63 ){
 			//26
