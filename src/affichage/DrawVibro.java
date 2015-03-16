@@ -9,7 +9,7 @@ import javax.swing.JPanel;
 public class DrawVibro extends JPanel{
 
 	public DrawVibro() {
-		repaint();
+		//repaint();
 		setPreferredSize(new Dimension(50, 50));
 	}
 
